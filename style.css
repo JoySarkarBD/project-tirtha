@@ -396,7 +396,7 @@ ul {
   position: relative;
 }
 .overview-text {
-  margin-top: 40px;
+  margin-top: 0px !important;
 }
 .overview-image {
   border-radius: 10px;
@@ -428,7 +428,7 @@ ul {
   position: absolute;
   left: 0px;
   top: 6px;
-  content: "\e64c";
+  content: "✓";
   font-family: themify;
   width: 24px;
   height: 24px;

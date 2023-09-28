@@ -124,7 +124,7 @@
                         <div class="alternate-rows">
                             <div class="alternate-row alternate-row--share">
                                 <div class="alternate-row__image-wrap">
-                                    <img src="/img/refer/share-referral-link.png" alt="Share Your Referral Link">
+                                    <img src="/img/refer/refer.png" alt="Share Your Referral Link">
                                 </div>
                                 <div class="alternate-row__text-wrap">
                                     <div class="numbered-heading numbered-heading--stacked mb-5">
@@ -138,7 +138,7 @@
                             </div>
                             <div class="alternate-row alternate-row--text-img">
                                 <div class="alternate-row__image-wrap">
-                                    <img src="/img/refer/write-a-review.png" alt="Write a Review">
+                                    <img src="/img/refer/review.png" alt="Write a Review">
                                 </div>
                                 <div class="alternate-row__text-wrap">
                                     <div class="numbered-heading numbered-heading--stacked mb-5">
@@ -153,8 +153,7 @@
                             </div>
                             <div class="alternate-row">
                                 <div class="alternate-row__image-wrap">
-                                    <img src="/img/refer/create-engaging-promotional-video.png"
-                                        alt="Create an Engaging Promotional Video">
+                                    <img src="/img/refer/press-play-bro.png" alt="Create an Engaging Promotional Video">
                                 </div>
                                 <div class="alternate-row__text-wrap">
                                     <div class="numbered-heading numbered-heading--stacked mb-5">
@@ -168,7 +167,7 @@
                             </div>
                             <div class="alternate-row alternate-row--text-img alternate-row--engage">
                                 <div class="alternate-row__image-wrap">
-                                    <img src="/img/refer/engage-your-audience.png" alt="Engage Your Audience">
+                                    <img src="/img/refer/auddience.png" alt="Engage Your Audience">
                                 </div>
                                 <div class="alternate-row__text-wrap">
                                     <div class="numbered-heading numbered-heading--stacked mb-5">
@@ -182,7 +181,7 @@
                             </div>
                             <div class="alternate-row alternate-row--participate">
                                 <div class="alternate-row__image-wrap">
-                                    <img src="/img/refer/participate-online-communities.png"
+                                    <img src="/img/refer/Online-Communities.png"
                                         alt="Participate in Online Communities">
                                 </div>
                                 <div class="alternate-row__text-wrap">
@@ -646,11 +645,6 @@
         </div>
 
     </div>
-
-    <!-- <script src="js/bootstrap.min.js"></script> -->
-    <!-- 
-    <script src="js/pico-app.js"></script>
-    <script src="js/pico-vendor.js"></script> -->
     <script src="js/jequery.js"></script>
     <script>
         var accordion = $('body').find('[data-behavior="accordion"]');
@@ -677,10 +671,17 @@
                     }
                 };
 
+                var closeOtherAccordions = function (currentItem) {
+                    // Close other open accordion sections
+                    accordionItems.not(currentItem).removeClass(expandedClass);
+                    accordionItems.not(currentItem).find('.accordion__content').css('height', '0px');
+                };
+
                 var toggleClasses = function (event) {
                     var clickedItem = event.currentTarget;
                     var currentItem = $(clickedItem).parent();
-                    var clickedContent = $(currentItem).find('.accordion__content')
+                    var clickedContent = $(currentItem).find('.accordion__content');
+                    closeOtherAccordions(currentItem); // Close other accordions
                     $(currentItem).toggleClass(expandedClass);
                     setHeight(currentItem);
 
@@ -688,13 +689,12 @@
                         $(clickedItem).attr('aria-selected', 'true');
                         $(clickedItem).attr('aria-expanded', 'true');
                         $(clickedContent).attr('aria-hidden', 'false');
-
                     } else {
                         $(clickedItem).attr('aria-selected', 'false');
                         $(clickedItem).attr('aria-expanded', 'false');
                         $(clickedContent).attr('aria-hidden', 'true');
                     }
-                }
+                };
 
                 triggerBtn.on('click', event, function (e) {
                     e.preventDefault();
@@ -711,6 +711,7 @@
             });
 
         });
+
     </script>
 </body>
 

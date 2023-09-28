@@ -1355,7 +1355,7 @@ h6,
 }
 
 .alternate-row:first-child {
-  margin-top: 0;
+  margin-top: 60px;
 }
 
 .alternate-row__image-wrap {
@@ -1437,6 +1437,24 @@ h6,
   .alternate-row__image-wrap {
     margin-bottom: 30px;
     margin-bottom: 1.875rem;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 934px) {
+  .m07__arrow {
+    width: 220px !important;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 963px) {
+  .m09__row {
+    flex-direction: column;
+  }
+  .m09__left {
+    width: 100%;
+    text-align: center;
+  }
+  .accordion {
+    max-width: 100% !important;
+    width: 100% !important;
   }
 }
 

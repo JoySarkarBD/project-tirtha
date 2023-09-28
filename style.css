@@ -488,6 +488,130 @@ ul {
     transform: rotate(360deg);
   }
 }
+
+/*--------------------------------*/
+/* .Send Money CSS
+/*--------------------------------*/
+.send-money-form {
+  display: block;
+  overflow: hidden;
+  background: #1b2654;
+}
+.form-top {
+  background: #1ba8c6;
+  padding: 15px 20px;
+}
+.form-inner {
+  padding: 40px 50px;
+  display: block;
+  overflow: hidden;
+}
+.form-inner form input {
+  width: 100%;
+  height: 55px;
+  border: 1px solid #f6f6f6;
+  border-radius: 4px;
+  text-indent: 15px;
+  /* margin: 30px; */
+  background: transparent;
+}
+.nice-select {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #f6f6f6;
+  height: 55px;
+  line-height: 52px;
+  background: transparent;
+}
+.nice-select .list {
+  width: 100%;
+  border: 1px solid #f6f6f6;
+  background: #1b2654;
+  overflow-y: scroll;
+  max-height: 160px;
+}
+.form-inner form .submit_btn {
+  height: 55px;
+  width: 100%;
+  background: #1ba8c6;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  border: 1px solid #1ba8c6;
+  transition: 0.5s;
+}
+.form-inner form .submit_btn:hover {
+  color: #1ba8c6;
+  transition: 0.5s;
+  background: transparent;
+}
+.form-inner form textarea {
+  width: 100%;
+  border: 1px solid #f6f6f6;
+  border-radius: 4px;
+  padding-left: 15px;
+  padding-top: 10px;
+  height: 180px;
+  background: transparent;
+}
+textarea {
+  overflow: hidden;
+}
+.form-inner form label {
+  font-weight: 500;
+}
+.currency-exchange .form-inner {
+  padding: 40px 50px;
+  display: block;
+  overflow: hidden;
+  height: 100%;
+  min-height: 360px;
+}
+.add-bank-form .form-inner {
+  height: 100%;
+  min-height: 360px;
+}
+.form_label,
+.text {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #8e8c8c;
+}
+.form_label,
+.balance {
+  font-size: 25px;
+  margin: 5px 0px;
+  font-weight: 600;
+}
+.deposit_msg {
+  margin: 12px 0px;
+}
+.deposit_msg a {
+  color: #d2c6c6;
+  font-size: 18px;
+}
+.notification p {
+  background: #3f50b5;
+  padding: 5px 20px;
+  border-radius: 6px;
+  font-size: 17px;
+  margin: 0;
+  width: fit-content;
+}
+.notification p span {
+  padding-left: 13px;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .form-inner {
+    padding: 40px 13px;
+  }
+}
 /*--------------------------------*/
 /* .End CSS
 /*--------------------------------*/

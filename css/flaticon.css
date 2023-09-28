@@ -1,0 +1,49 @@
+/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 22/06/2016 15:41
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticond41d.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Flaticon.woff") format("woff"),
+    url("../fonts/Flaticon.ttf") format("truetype"),
+    url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-style: normal;
+}
+.flaticon-008-document-1:before {
+  content: "\f107";
+}
+.flaticon-026-businessman-2:before {
+  content: "\f119";
+}
+.flaticon-042-security:before {
+  content: "\f129";
+}
+.flaticon-024-signature-1:before {
+  content: "\f117";
+}
+.flaticon-086-briefcase-1:before {
+  content: "\f155";
+}
+.flaticon-099-inbox:before {
+  content: "\f162";
+}
+.flaticon-079-graphic:before {
+  content: "\f14e";
+}
+.flaticon-007-document-2:before {
+  content: "\f106";
+}
+.flaticon-107-speech-bubbles:before {
+  content: "\f16a";
+}

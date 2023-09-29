@@ -445,6 +445,11 @@ h6,
   text-transform: uppercase;
   font-weight: 700;
 }
+.banner_discount {
+  color: #20ac57;
+  font-weight: 900;
+  text-shadow: 0px 4px 0px #d6c9c980;
+}
 
 .home-section__header {
   display: -webkit-box;

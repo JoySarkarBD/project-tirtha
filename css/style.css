@@ -48,7 +48,7 @@ h3 {
   line-height: 38px;
 }
 h4 {
-  font-size: 24px;
+  font-size: 29px;
   line-height: 34px;
 }
 h5 {
@@ -106,6 +106,7 @@ ul {
 }
 .bg-color2 {
   background: #070c33;
+  z-index: 2;
 }
 .browserupgrade {
   margin: 0.2em 0;
@@ -145,6 +146,9 @@ ul {
 /*----------------------------------------*/
 /*  5. About area
 /*----------------------------------------*/
+.about-content {
+  z-index: 1;
+}
 .about-image img {
   border-radius: 10px;
 }
@@ -210,6 +214,7 @@ ul {
   transition: 0.5s;
   overflow: hidden;
   border-radius: 4px;
+  z-index: 1;
 }
 .single-service:hover {
   background: #17aac9;
@@ -423,6 +428,7 @@ ul {
 }
 .overview-images img {
   border-radius: 4px;
+  z-index: auto;
 }
 .overview-text li::after {
   position: absolute;
@@ -493,27 +499,34 @@ ul {
 /* .Send Money CSS
 /*--------------------------------*/
 .send-money-form {
+  padding: 40px 0px;
   display: block;
   overflow: hidden;
-  background: #1b2654;
+  background: rgb(27 38 84 / 73%);
+  border-radius: 20px;
 }
 .form-top {
-  background: #1ba8c6;
   padding: 15px 20px;
+  color: #dae1e8;
+  text-align: center;
+  font-weight: 700;
 }
 .form-inner {
-  padding: 40px 50px;
+  padding: 13px 50px;
   display: block;
   overflow: hidden;
 }
 .form-inner form input {
   width: 100%;
   height: 55px;
-  border: 1px solid #f6f6f6;
-  border-radius: 4px;
+  border: 1px solid #605757;
+  border-radius: 50px;
   text-indent: 15px;
   /* margin: 30px; */
-  background: transparent;
+  background: white;
+  box-shadow: 0px 2px 6px 0px rgba(19, 18, 66, 0.07);
+  outline: none;
+  color: #2f2f2f;
 }
 .nice-select {
   width: 100%;
@@ -531,17 +544,20 @@ ul {
   max-height: 160px;
 }
 .form-inner form .submit_btn {
-  height: 55px;
+  margin: 1;
   width: 100%;
   background: #1ba8c6;
-  border-radius: 4px;
+  border-radius: 50px;
   color: #ffffff;
-  font-size: 17px;
+  font-size: 14px;
+  margin: 1;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   border: 1px solid #1ba8c6;
   transition: 0.5s;
+  margin: 14px 0px;
+  padding: 6px 0px;
 }
 .form-inner form .submit_btn:hover {
   color: #1ba8c6;
@@ -562,6 +578,10 @@ textarea {
 }
 .form-inner form label {
   font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
 }
 .currency-exchange .form-inner {
   padding: 40px 50px;
@@ -576,31 +596,35 @@ textarea {
 }
 .form_label,
 .text {
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 3px;
-  color: #8e8c8c;
+  color: #d4cfcf;
 }
 .form_label,
 .balance {
-  font-size: 25px;
+  font-size: 27px;
   margin: 5px 0px;
-  font-weight: 600;
+  font-weight: 700;
+  color: white;
 }
 .deposit_msg {
-  margin: 12px 0px;
+  margin: 14px 0px;
+  text-align: end;
+  transition: 0.3s;
 }
 .deposit_msg a {
   color: #d2c6c6;
   font-size: 18px;
 }
 .notification p {
-  background: #3f50b5;
+  background: rgb(254 202 202);
   padding: 5px 20px;
-  border-radius: 6px;
+  border-radius: 30px;
   font-size: 17px;
   margin: 0;
+  color: #332f2f;
   width: fit-content;
 }
 .notification p span {
@@ -615,3 +639,161 @@ textarea {
 /*--------------------------------*/
 /* .End CSS
 /*--------------------------------*/
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+  height: 1;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+li {
+  list-style: none;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+  position: absolute;
+  top: 0;
+}

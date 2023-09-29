@@ -401,6 +401,8 @@ ul {
   position: relative;
 }
 .overview-text {
+  position: relative;
+  z-index: 1;
   margin-top: 0px !important;
 }
 .overview-image {
@@ -425,10 +427,11 @@ ul {
 .overview-images {
   margin-right: 30px;
   border-radius: 4px;
+  position: relative;
+  z-index: 1;
 }
 .overview-images img {
   border-radius: 4px;
-  z-index: auto;
 }
 .overview-text li::after {
   position: absolute;
